@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #081130;
+  color: white;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.contacts {
+  text-align: right;
+  font-size: 14px;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.label {
+  background-color: white;
+  color: #081130;
+  font-size: 12px;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.subtext {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ffc24b;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffae00;
+}
+
+.hero-img {
+  width: 1000px;
+
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.hero-img img {
+  max-width: 100%;
+  width: 1000px;
+  border-radius: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-img::after {
+  content: "";
+  position: absolute;
+  width: 1000px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 80px;
+  background: url('cloud.png') no-repeat center;
+  background-size: contain;
+  z-index: 1;
+}
+
+/* Декоративные ягоды и листья */
+.decor {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.berry1 {
+  top: 80px;
+  left: 30px;
+  width: 80px;
+  height: 80px;
+  background: url('berry.png') no-repeat center;
+  background-size: contain;
+}
+
+.berry2 {
+  top: 300px;
+  right: 100px;
+  width: 60px;
+  height: 60px;
+  background: url('berry.png') no-repeat center;
+  background-size: contain;
+}
+
+.leaf1 {
+  top: 200px;
+  left: 150px;
+  width: 100px;
+  height: 100px;
+  background: url('leaf.png') no-repeat center;
+  background-size: contain;
+}
+
+.leaf2 {
+  bottom: 100px;
+  right: 80px;
+  width: 90px;
+  height: 90px;
+  background: url('leaf.png') no-repeat center;
+  background-size: contain;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contacts {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .hero-img {
+    margin-top: 30px;
+  }
+}
+body {
+  background-image: url('/bg\ \(1\).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
